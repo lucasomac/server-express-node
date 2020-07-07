@@ -1,0 +1,28 @@
+{
+  "name": "course-manager-server",
+  "version": "1.0.0",
+  "description": "Servidor HTTP padrão para utilização em projetos",
+  "main": "./Server/index.js",
+  "scripts": {
+    "start": "nodemon Server/index.js --exec babel-node",
+    "build": "babel lib -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --require @babel/register"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.4",
+    "mocha": "^8.0.1",
+    "nodemon": "^2.0.4"
+  }
+}
